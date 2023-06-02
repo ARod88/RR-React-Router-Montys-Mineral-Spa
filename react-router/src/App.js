@@ -21,19 +21,25 @@ function App() {
           <Container>
             <Nav defaultActiveKey="/" variant="tabs" fill>
               <Nav.Item>
-                <Nav.Link href="/">
-                  <Link to="/">Home</Link>
-                </Nav.Link>
+                <Link to="/">
+                  <Nav.Link href="/">
+                    Home
+                  </Nav.Link>
+                </Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey={"aboutPage"}>
-                  <Link to="/about">About Us</Link>
-                </Nav.Link>
+                <Link to="/about">
+                  <Nav.Link href="/about" eventKey={"aboutPage"}>
+                    About Us
+                  </Nav.Link>
+                </Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey={"packagesPage"}>
-                  <Link to="/packages">Our Packages</Link>
-                </Nav.Link>
+                <Link to="/packages">
+                  <Nav.Link href="/packages" eventKey={"packagesPage"}>
+                    Our Packages
+                  </Nav.Link>
+                </Link>
               </Nav.Item>
             </Nav>
           </Container>

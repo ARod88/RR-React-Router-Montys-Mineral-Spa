@@ -4,10 +4,10 @@ import Container from 'react-bootstrap/Container';
 export default function About () {
     return (
         <Container className="aboutpage">
-            <Container className="aboutHeader">
+            <Container>
                 <h1>About Us</h1>
             </Container>
-            <Card border="secondary">
+            <Card border="secondary" style={{ width: '75%', margin: "0 auto"}}>
                 <Card.Img variant="top" src="hotsprings.jpg" alt="hotsprings" style={{ width: '100%', margin: '0 auto'}} />
                 <Card.Body>
                     <Card.Text>
