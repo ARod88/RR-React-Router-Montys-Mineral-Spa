@@ -1,15 +1,18 @@
+import ListGroup from 'react-bootstrap/ListGroup'
+import Container from 'react-bootstrap/Container'
 
-
-export default function Packages() {
+export default function Packages(props) {
 
     return (
-        <div>
-            <div className="packages">
-                <div className="packagesHeader">
+        <Container>
+            <Container className="packages">
+                <Container className="packagesHeader">
                     <h1>Our Packages</h1>
-                </div>
-                
-            </div>
-        </div>
+                    <ListGroup>
+                        {props.packages.map((eachPackage, i) => <ListGroup.Item key={i}>{eachPackage}</ListGroup.Item>)}
+                    </ListGroup>
+                </Container>
+            </Container>
+        </Container>
     )
 }
